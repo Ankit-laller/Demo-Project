@@ -36,7 +36,7 @@ stages:
         inputs:
           platform: '$(buildPlatform)'
           configuration: '$(buildConfiguration)'
-      
+      - task: PublishBuildArtifacts@1
       - task: PublishBuildArtifacts@1
         inputs:
           PathtoPublish: '$(Build.ArtifactStagingDirectory)'
@@ -68,4 +68,4 @@ stages:
           appType: 'webApp'
           WebAppName: 'Demo-Project'
           packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-      - task: PublishBuildArtifacts@1
+
