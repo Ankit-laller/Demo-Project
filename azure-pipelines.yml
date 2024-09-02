@@ -68,3 +68,4 @@ stages:
           appType: 'webApp'
           WebAppName: 'Demo-Project'
           packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      - task: PublishBuildArtifacts@1
